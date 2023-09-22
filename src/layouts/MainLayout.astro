@@ -1,0 +1,76 @@
+---
+import "../styles/generelt.css";
+import MinePlayliste from "../components/MinePlayliste.astro";
+import Madefor from "../components/Madefor.astro";
+import Playliste from "../components/Playliste.astro";
+import home from "../icons/home.svg";
+import search from "../icons/search-icon.svg";
+import like from "../img/synesgodtom.png";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="genrelt.css" />
+    <title>Astro</title>
+  </head>
+  <body>
+    <>
+      <section class="sidebar">
+        <div class="nav">
+          <div class="home">
+            <img src={home.src} alt="hjemme ikon" />
+            <h3>Home</h3>
+          </div>
+
+          <div class="search">
+            <img src={search.src} alt="search ikon" />
+            <a href="search.astro"><h3>Search</h3></a>
+          </div>
+        </div>
+
+        <h3>Your library</h3>
+
+        <div class="playlister_liste">
+          <Playliste
+            titel="Liked Songs"
+            image="/"
+            beskrivelse="Chrystal Jørgensen"
+          />
+          <Playliste
+            titel="Discover Weekly"
+            image="synesgodtom.png"
+            beskrivelse="Chrystal Jørgensen"
+          />
+          <Playliste
+            titel="Fall in Lo-fi Chill"
+            image="synesgodtom.png"
+            beskrivelse="Chrystal Jørgensen"
+          />
+          <Playliste
+            titel="Træning"
+            image="synesgodtom.png"
+            beskrivelse="Chrystal Jørgensen"
+          />
+          <Playliste
+            titel="VtA - Modern"
+            image="synesgodtom.png"
+            beskrivelse="Chrystal Jørgensen"
+          />
+          <Playliste
+            titel="Sing along"
+            image="synesgodtom.png"
+            beskrivelse="Chrystal Jørgensen"
+          />
+        </div>
+      </section>
+      <slot />
+      <!-- INDHOLD -->
+    </>
+  </body>
+</html>
+</html>
+</html>

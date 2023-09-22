@@ -5,7 +5,7 @@ const image = Astro.props.image;
 ---
 
 <section class="liste">
-  <img src="/#" alt="playliste billeder" />
+  <img src={image} alt="playliste billeder" />
   <div class="beskrivelse">
     <h3>{titel}</h3>
     <p>Playliste &#8226;{beskrivelse}</p>
@@ -21,6 +21,7 @@ const image = Astro.props.image;
     background-color: #121212;
     position: relative;
     overflow: hidden;
+    border-radius: 0.5rem;
   }
 
   .beskrivelse {

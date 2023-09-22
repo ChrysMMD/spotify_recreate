@@ -40,6 +40,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .indhold {
@@ -49,6 +50,7 @@ p {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   padding: 2rem;
+  border-radius: 0.5rem;
 }
 
 .madefor {
@@ -60,4 +62,30 @@ p {
 
 .sidebar {
   width: 100%;
+}
+
+.nav {
+  background-color: #121212;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+a :link :visited :active {
+  color: white;
+}
+
+a :hover {
+  color: grey;
 }
