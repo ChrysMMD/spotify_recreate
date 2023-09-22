@@ -84,8 +84,10 @@ p {
 
 a :link :visited :active {
   color: white;
+  text-decoration: none;
 }
 
 a :hover {
   color: grey;
+  text-decoration: none;
 }
