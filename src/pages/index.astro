@@ -1,5 +1,8 @@
 ---
-
+import "../styles/generelt.css";
+import MinePlayliste from "../components/MinePlayliste.astro";
+import Madefor from "../components/Madefor.astro";
+import Playliste from "../components/Playliste.astro";
 ---
 
 <html lang="en">
@@ -8,6 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="genrelt.css" />
     <title>Astro</title>
   </head>
   <body>
@@ -19,14 +23,59 @@
           <h3>Your library</h3>
         </div>
 
-        <div class="playlister_liste">comp</div>
+        <div class="playlister_liste">
+          <Playliste
+            titel="Liked Songs"
+            image="synesgodtom.png"
+            beskrivelse="Chrystal Jørgensen"
+          />
+          <Playliste
+            titel="Discover Weekly"
+            image="synesgodtom.png"
+            beskrivelse="Chrystal Jørgensen"
+          />
+          <Playliste
+            titel="Fall in Lo-fi Chill"
+            image="synesgodtom.png"
+            beskrivelse="Chrystal Jørgensen"
+          />
+          <Playliste
+            titel="Træning"
+            image="synesgodtom.png"
+            beskrivelse="Chrystal Jørgensen"
+          />
+          <Playliste
+            titel="VtA - Modern"
+            image="synesgodtom.png"
+            beskrivelse="Chrystal Jørgensen"
+          />
+          <Playliste
+            titel="Sing along"
+            image="synesgodtom.png"
+            beskrivelse="Chrystal Jørgensen"
+          />
+        </div>
       </section>
 
       <section class="indhold">
         <h1>Good afternoon</h1>
-        <section class="senest_playlister">comp</section>
+
+        <section class="senest_playlister">
+          <MinePlayliste titel="Liked Songs" />
+          <MinePlayliste titel="Discover Weekly" />
+          <MinePlayliste titel="Fall in Lo-fi Chill" />
+          <MinePlayliste titel="Træning" />
+          <MinePlayliste titel="VtA - Modern" />
+          <MinePlayliste titel="Sing along" />
+        </section>
+
         <h2>Made for Chrystal Astrid Jørgensen</h2>
-        <section class="madefor">comp</section>
+        <section class="madefor">
+          <Madefor dayli="Daily Mix 1" />
+          <Madefor dayli="Daily Mix 2" />
+          <Madefor dayli="Daily Mix 3" />
+          <Madefor dayli="Daily Mix 4" />
+        </section>
       </section>
     </main>
   </body>

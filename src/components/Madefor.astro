@@ -1,0 +1,26 @@
+---
+const dayli = Astro.props.dayli;
+---
+
+<section class="kort">
+  <div class="kort_img">
+    <img src="/#" alt="playliste kort" />
+  </div>
+  <h3>{dayli}</h3>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, dolores.</p>
+</section>
+
+<style>
+  .kort {
+    background-color: #2b292e;
+    width: 10rem;
+    padding: 1rem;
+  }
+
+  .kort_img {
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    border-radius: 0.2rem;
+  }
+</style>

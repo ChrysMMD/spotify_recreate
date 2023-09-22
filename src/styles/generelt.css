@@ -1,0 +1,63 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+main {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+h3,
+h2,
+h1 {
+  color: white;
+}
+
+h1 {
+  font-size: 28px;
+  margin-left: 1rem;
+}
+
+h2 {
+  font-size: 22px;
+  margin-left: 1rem;
+}
+
+h3 {
+  font-size: 12px;
+  margin-left: 0.5rem;
+}
+
+p {
+  color: #a7a7a7;
+  font-size: 10px;
+}
+
+.senest_playlister {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.indhold {
+  background-image: linear-gradient(#1b0e3c, #2b292e);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 2rem;
+}
+
+.madefor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+}
+
+.sidebar {
+  width: 100%;
+}

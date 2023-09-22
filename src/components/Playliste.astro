@@ -1,0 +1,44 @@
+---
+const titel = Astro.props.titel;
+const beskrivelse = Astro.props.beskrivelse;
+const image = Astro.props.image;
+---
+
+<section class="liste">
+  <img src="/#" alt="playliste billeder" />
+  <div class="beskrivelse">
+    <h3>{titel}</h3>
+    <p>Playliste &#8226;{beskrivelse}</p>
+  </div>
+</section>
+
+<style>
+  .liste {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 0.4rem;
+    margin-left: 0.5rem;
+    background-color: #121212;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .beskrivelse {
+    position: absolute;
+    left: 4rem;
+    top: 0.35rem;
+  }
+
+  img {
+    grid-column: 1/2;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 0.2rem;
+  }
+
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
+</style>
